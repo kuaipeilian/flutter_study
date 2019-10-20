@@ -1,47 +1,206 @@
 [
   {
-    "title": "在速度中“Larghetto”表示（   ）",
+    "title": "低音谱号上加一线是什么音",
     "options": [
-      "广板",
-      "慢板",
-      "柔板",
-      "小广板"
-    ]
+      {
+        "detail": "Do",
+        "imgStr": ""
+      },
+      {
+        "detail": "La",
+        "imgStr": ""
+      }
+    ],
+    "correct": 1
   },
   {
-    "title": "pp 在力度中表示什么（   ）",
+    "title": "同主音自然大小调音阶有几个共同音",
     "options": [
-      "弱",
-      "很弱",
-      "强",
-      "中强"
-    ]
+      {
+        "detail": "4个",
+        "imgStr": ""
+      },
+      {
+        "detail": "5个",
+        "imgStr": ""
+      },
+      {
+        "detail": "6个",
+        "imgStr": ""
+      },
+      {
+        "detail": "7个",
+        "imgStr": ""
+      }
+    ],
+    "correct": 1
   },
   {
-    "title": "下列表示“活泼的”表情术语正确的是（   ）",
+    "title": "由发音体震动时延续时间长短来决定的音的性质是",
     "options": [
-      "Amabile",
-      "Animato",
-      "Dolce",
-      "Cantabile"
-    ]
+      {
+        "detail": "音色",
+        "imgStr": ""
+      },
+      {
+        "detail": "音高",
+        "imgStr": ""
+      },
+      {
+        "detail": "音量",
+        "imgStr": ""
+      },
+      {
+        "detail": "音值",
+        "imgStr": ""
+      }
+    ],
+    "correct": 4
   },
   {
-    "title": "dim 力度术语表示是中文的意思是（   ）",
+    "title": "音乐术语Moderato 的中文含义是",
     "options": [
-      "渐强",
-      "中强",
-      "渐弱",
-      "很弱"
-    ]
+      {
+        "detail": "中板",
+        "imgStr": ""
+      },
+      {
+        "detail": "慢板",
+        "imgStr": ""
+      },
+      {
+        "detail": "快板",
+        "imgStr": ""
+      },
+      {
+        "detail": "急板",
+        "imgStr": ""
+      }
+    ],
+    "correct": 1
   },
   {
-    "title": "“Rall”速度术语正确的理解是（   ）",
+    "title": "调式音级以主因为中心，主因上方纯五度的音，叫做   ",
     "options": [
-      "回原速",
-      "渐慢",
-      "加快",
-      "中速"
-    ]
+      {
+        "detail": "上中音",
+        "imgStr": ""
+      },
+      {
+        "detail": "下中音",
+        "imgStr": ""
+      },
+      {
+        "detail": "属音",
+        "imgStr": ""
+      },
+      {
+        "detail": "下属音",
+        "imgStr": ""
+      }
+    ],
+    "correct": 3
+  },
+  {
+    "title": "在和声大调中，小三和弦有",
+    "options": [
+      {
+        "detail": "一个",
+        "imgStr": ""
+      },
+      {
+        "detail": "二个",
+        "imgStr": ""
+      },
+      {
+        "detail": "三个",
+        "imgStr": ""
+      },
+      {
+        "detail": "四个",
+        "imgStr": ""
+      }
+    ],
+    "correct": 2
+  },
+  {
+    "title": "谱号用来确定五线谱上音的准确高度。次中音谱号也叫做",
+    "options": [
+      {
+        "detail": "F谱号",
+        "imgStr": ""
+      },
+      {
+        "detail": "三线谱号",
+        "imgStr": ""
+      },
+      {
+        "detail": "C谱号",
+        "imgStr": ""
+      },
+      {
+        "detail": "四线谱号",
+        "imgStr": ""
+      }
+    ],
+    "correct": 3
+  },
+  {
+    "title": "小三度转位后成为",
+    "options": [
+      {
+        "detail": "增六度",
+        "imgStr": ""
+      },
+      {
+        "detail": "减六度",
+        "imgStr": ""
+      },
+      {
+        "detail": "小六度",
+        "imgStr": ""
+      },
+      {
+        "detail": "大六度",
+        "imgStr": ""
+      }
+    ],
+    "correct": 4
+  },
+  {
+    "title": "下列谱号那一个是低音谱号",
+    "options": [
+      {
+        "detail": "",
+        "imgStr": "9_1.png"
+      },
+      {
+        "detail": "",
+        "imgStr": "9_2.png"
+      }
+    ],
+    "correct": 2
+  },
+  {
+    "title": "小三度转位后成为",
+    "options": [
+      {
+        "detail": "",
+        "imgStr": "10_1.png"
+      },
+      {
+        "detail": "",
+        "imgStr": "10_2.png"
+      },
+      {
+        "detail": "",
+        "imgStr": "10_3.png"
+      },
+      {
+        "detail": "",
+        "imgStr": "10_4.png"
+      }
+    ],
+    "correct": 2
   }
 ]

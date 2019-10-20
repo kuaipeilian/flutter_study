@@ -6,6 +6,11 @@ class TextStyles {
     color: Color(0xff666666),
     fontFamily: 'PingFangSC-Regular',
   );
+  static const TextStyle text66R14 = TextStyle(
+    fontSize: 14,
+    color: Color(0xff666666),
+    fontFamily: 'PingFangSC-Regular',
+  );
   static const TextStyle text66R15 = TextStyle(
     fontSize: 15,
     color: Color(0xff666666),
@@ -19,6 +24,12 @@ class TextStyles {
     fontSize: 12,
     color: Color(0xffC7C7C7),
     fontFamily: 'PingFangSC-Regular',
+  );
+  static const TextStyle textC7M13 = TextStyle(
+    fontSize: 13,
+    color: Color(0xffC7C7C7),
+    fontWeight: FontWeight.bold,
+    fontFamily: 'PingFangSC-Medium',
   );
 
   static const TextStyle text35R15 = TextStyle(
@@ -103,10 +114,32 @@ class TextStyles {
   );
 
 
+  static const TextStyle titleAEM17 = TextStyle(
+    fontSize: 17,
+    color: Color(0xff0070AE),
+    fontWeight: FontWeight.bold,
+    fontFamily: 'PingFangSC-Medium',
+    decoration: TextDecoration.none,
+  );
+
+  static const TextStyle titleAFM33 = TextStyle(
+    fontSize: 33,
+    color: Color(0xff449AFF),
+    fontWeight: FontWeight.bold,
+    fontFamily: 'PingFangSC-Medium',
+    decoration: TextDecoration.none,
+  );
+
+
 
 
   static const TextStyle btnN18 = TextStyle(
     fontSize: 18,
+    color: Color(0xffFFFFFF),
+    fontFamily: 'PingFangSC-Regular',
+  );
+  static const TextStyle btnN17 = TextStyle(
+    fontSize: 17,
     color: Color(0xffFFFFFF),
     fontFamily: 'PingFangSC-Regular',
   );

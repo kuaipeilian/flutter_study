@@ -1,6 +1,6 @@
 name: flutter_kpl_vip
 description: Flutter app for kpl news
-version: 1.0.0+2
+version: 1.0.0+7
 environment:
   sdk: ">=2.2.2 <3.0.0"
 
@@ -35,4 +35,7 @@ flutter:
     - assets/images/
     - assets/images/tabbar/
     - assets/images/recommend/
+    - assets/images/testCard/
+    - assets/images/level/
+    - assets/images/answer/
     - assets/data/

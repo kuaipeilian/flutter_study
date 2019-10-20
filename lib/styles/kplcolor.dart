@@ -9,6 +9,10 @@ class KplColor {
   static const Color red = Color(0xFFFE5806);
   static const Color light_bgc_2 = Color(0xFFF3F3F3);
 
+  // 蒙层
+  static const Color transparency_6 = Color(0x5B000000);
+
+  static const Color light_yellow = Color(0xFFFFFBED);
 
 
   static const Color app_main = Color(0xFFFFFFFF);

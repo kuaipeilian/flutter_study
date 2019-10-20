@@ -5,8 +5,12 @@ class KPLAssetImage extends StatelessWidget {
   final double height;
   final String name;
   final String folderName;
+  final String extName;
   String get path {
-    return 'assets/$folderName/$name.png';
+    if (extName.isEmpty) {
+      return 'assets/$folderName/$name';
+    }
+    return 'assets/$folderName/$name.$extName';
   }
 
   final BoxFit fit;
@@ -14,6 +18,7 @@ class KPLAssetImage extends StatelessWidget {
       {this.folderName = 'images',
       this.width,
       this.height,
+      this.extName = 'png',
       this.fit = BoxFit.contain});
 
   @override

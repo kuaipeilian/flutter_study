@@ -88,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
           KPLAssetImage('vip_logo', width: 90.0, height: 90.0),
           Gaps.vGap20,
           Text(
-            'flutter 技术调研',
+            '技术调研',
             style: TextStyles.text35M20,
           )
         ],

@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import 'package:device_info/device_info.dart';
 import 'package:event_bus/event_bus.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class Application {
   // 是否是生产模式
   bool isProduction = const bool.fromEnvironment("dart.vm.product");
   // 接口环境
-  String baseUrlEnv = 'pro';
+  String baseUrlEnv = 'dev';
   // 本地信息
   UserInfoModel userInfo;
   // 基本信息
@@ -102,6 +103,7 @@ class Application {
   static void initScreenUtil(BuildContext context) {
     ScreenUtil.instance = ScreenUtil(width: 750, height: 1334)..init(context);
   }
+
 }
 
 double screenAdaptation(double value) {

@@ -5,7 +5,9 @@ class GradientButton extends StatelessWidget {
   final Function onPressed;
   final double height;
   final String title;
-  GradientButton({@required this.title, this.height = 48, this.onPressed});
+  final List<Color> colors;
+  final TextStyle style;
+  GradientButton({@required this.title, this.height = 48, this.onPressed, this.style = TextStyles.text35M18, this.colors = const [Color(0xffFFDE42), Color(0xffFFA500)]});
   @override
   Widget build(BuildContext context) {
     return FlatButton(
@@ -14,7 +16,7 @@ class GradientButton extends StatelessWidget {
         height: height,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [Color(0xffFFDE42), Color(0xffFFA500)],
+              colors: colors,
               begin: FractionalOffset(0.53, -0.33),
               end: FractionalOffset(0.59, 1.1)), //背景渐变
           borderRadius: BorderRadius.circular(24.0),
@@ -22,7 +24,7 @@ class GradientButton extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: TextStyles.text35M18,
+            style: style,
           ),
         ),
       ),

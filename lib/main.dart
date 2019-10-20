@@ -21,7 +21,7 @@ class WLCVipApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return OKToast(
       child: MaterialApp(
-        title: 'flutter 调研',
+        title: '技术调研',
         theme: ThemeData(
           appBarTheme: AppBarTheme(
             color: Colors.white,

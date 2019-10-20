@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kpl_vip/api/local_data.dart';
+import 'package:flutter_kpl_vip/components/ProblemResultView.dart';
 import 'package:flutter_kpl_vip/components/ProblemView.dart';
 import 'package:flutter_kpl_vip/models/problem_model.dart';
 import 'package:flutter_kpl_vip/routers/router.dart';
-import 'package:flutter_kpl_vip/tool/toast.dart';
 
 class MusicTestPage extends StatefulWidget {
   @override
@@ -11,9 +11,8 @@ class MusicTestPage extends StatefulWidget {
 }
 
 class _MusicTestPageState extends State<MusicTestPage> {
-  final _pageController = PageController();
-  int _currentIndex = 0;
   List<ProblemModel> _list = [];
+  bool isShowResult = false;
 
   @override
   void initState() {
@@ -26,61 +25,34 @@ class _MusicTestPageState extends State<MusicTestPage> {
     setState(() {});
   }
 
-  void _onPageChanged(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-  }
-
-  void _jumpToPage(int page) {
-    _pageController.jumpToPage(page);
-  }
-
-  void _onSelectPress(int i, int select) {
-    _list[select].selectOption = i;
-    setState(() {});
-  }
-
-  void _onNextPress() {
-    if (_list[_currentIndex].selectOption == -1) {
-      KPLToast.show('请先回答本题');
-      return;
-    }
-    if (_currentIndex < _list.length - 1) {
-      _jumpToPage(++_currentIndex);
-    } else {
-      Router.pushReplacementNamed(context, name: 'TestResultPage');
-    }
-  }
-
-  void _onPrePress() {
-    if (_currentIndex > 0) {
-      _jumpToPage(--_currentIndex);
-    } else {
-      KPLToast.show('这是第一题了');
-    }
-  }
+  
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('测试'),
-      ),
-      body: Container(
-        child: PageView(
-          controller: _pageController,
-          onPageChanged: _onPageChanged,
-          children: [
-            for (int i = 0; i < _list.length; i++)
-              ProblemView(
-                  data: _list[i],
-                  index: i,
-                  onSelectPress: _onSelectPress,
-                  onNextPress: _onNextPress,
-                  onPrePress: _onPrePress),
-          ],
-          physics: NeverScrollableScrollPhysics(), // 禁止滑动
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.white,
+          image: DecorationImage(
+              alignment: Alignment.topCenter,
+              image: AssetImage('assets/images/yl_bgc.png'))),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          title: Text('乐理测试:级别(一)'),
+          backgroundColor: Colors.transparent,
+        ),
+        body: Container(
+          child: isShowResult ? ProblemResultView(list: _list, onTapErrorOption: (index) {
+            Router.pushName(context, 'AnswerDetailPage', {
+              'data': _list[index],
+              'index': index + 1,
+              'total': _list.length,
+            });
+          },) : ProblemViews(list: _list, onDone: () {
+            setState(() {
+              isShowResult = true;
+            });
+          },)
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kpl_vip/page/AnswerDetailPage.dart';
 import 'package:flutter_kpl_vip/page/ColumnListPage.dart';
 import 'package:flutter_kpl_vip/page/DownLoadPage.dart';
 import 'package:flutter_kpl_vip/page/HomePage.dart';
@@ -25,6 +26,14 @@ class Router {
       "LoginPage": (context) => LoginPage(),
       "MediaListPage": (context) => MediaListPage(),
       "DownLoadPage": (context) => DownLoadPage(),
+      "AnswerDetailPage": (context) {
+        Map args = ModalRoute.of(context).settings.arguments;
+        return AnswerDetailPage(
+          data: args['data'],
+          total: args['total'],
+          index: args['index'],
+        );
+      },
       "ColumnListPage": (context) {
         Map args = ModalRoute.of(context).settings.arguments;
         return ColumnListPage(

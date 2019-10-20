@@ -3,12 +3,14 @@ import 'package:flutter/widgets.dart';
 /// 间隔
 class Gaps {
   /// 水平间隔
+  static const Widget hGap2 = SizedBox(width: 2);
   static const Widget hGap5 = SizedBox(width: 5);
   static const Widget hGap6 = SizedBox(width: 6);
   static const Widget hGap10 = SizedBox(width: 10);
   static const Widget hGap15 = SizedBox(width: 15);
   static const Widget hGap16 = SizedBox(width: 16);
   static const Widget hGap20 = SizedBox(width: 20);
+  static const Widget hGap30 = SizedBox(width: 30);
   /// 垂直间隔
   static const Widget vGap5 = SizedBox(height: 5);
   static const Widget vGap2 = SizedBox(height: 2);
